@@ -18,9 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     // 1. Create a view (want the view to size itself!)
     ALVCustomSliderView *sliderView = [[ALVCustomSliderView alloc] init];
+    [sliderView setRestorationIdentifier:@"Testing"];
+    NSLog(@"%@", sliderView.restorationIdentifier);
     
     // 2. Add as subview
     [self.view addSubview:sliderView];

@@ -10,6 +10,6 @@
 
 @interface UIView (ALVAdditions)
 
-- (UIView *)loadViewFromNib;
+- (UIView *)viewFromNib;
 
 @end

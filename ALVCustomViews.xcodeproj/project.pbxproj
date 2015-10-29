@@ -18,6 +18,7 @@
 		3AA94AF91BE1A52000D62116 /* NSObject+ALVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA94AF81BE1A52000D62116 /* NSObject+ALVAdditions.m */; };
 		3AA94AFC1BE1A85200D62116 /* UIView+ALVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA94AFB1BE1A85200D62116 /* UIView+ALVAdditions.m */; };
 		3AA94AFF1BE1AF1700D62116 /* ALVView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA94AFE1BE1AF1700D62116 /* ALVView.m */; };
+		3AA94B021BE1C39400D62116 /* UIViewController+ALVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA94B011BE1C39400D62116 /* UIViewController+ALVAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		3AA94AFB1BE1A85200D62116 /* UIView+ALVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ALVAdditions.m"; sourceTree = "<group>"; };
 		3AA94AFD1BE1AF1700D62116 /* ALVView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALVView.h; sourceTree = "<group>"; };
 		3AA94AFE1BE1AF1700D62116 /* ALVView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALVView.m; sourceTree = "<group>"; };
+		3AA94B001BE1C39400D62116 /* UIViewController+ALVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ALVAdditions.h"; sourceTree = "<group>"; };
+		3AA94B011BE1C39400D62116 /* UIViewController+ALVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ALVAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				3AA94AF81BE1A52000D62116 /* NSObject+ALVAdditions.m */,
 				3AA94AFA1BE1A85200D62116 /* UIView+ALVAdditions.h */,
 				3AA94AFB1BE1A85200D62116 /* UIView+ALVAdditions.m */,
+				3AA94B001BE1C39400D62116 /* UIViewController+ALVAdditions.h */,
+				3AA94B011BE1C39400D62116 /* UIViewController+ALVAdditions.m */,
 				3AA94AE41BE19FCE00D62116 /* Main.storyboard */,
 				3AA94AE71BE19FCE00D62116 /* Assets.xcassets */,
 				3AA94AE91BE19FCE00D62116 /* LaunchScreen.storyboard */,
@@ -177,6 +182,7 @@
 				3AA94AF91BE1A52000D62116 /* NSObject+ALVAdditions.m in Sources */,
 				3AA94AF41BE1A13F00D62116 /* ALVCustomSliderView.m in Sources */,
 				3AA94AFC1BE1A85200D62116 /* UIView+ALVAdditions.m in Sources */,
+				3AA94B021BE1C39400D62116 /* UIViewController+ALVAdditions.m in Sources */,
 				3AA94AE31BE19FCE00D62116 /* ViewController.m in Sources */,
 				3AA94AE01BE19FCE00D62116 /* AppDelegate.m in Sources */,
 				3AA94ADD1BE19FCE00D62116 /* main.m in Sources */,
@@ -328,6 +334,7 @@
 				3AA94AF11BE19FCE00D62116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

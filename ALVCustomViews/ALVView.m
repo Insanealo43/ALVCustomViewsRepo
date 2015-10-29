@@ -23,7 +23,7 @@
         // Frame needs to be set programmatically
         
         // 1. Load .xib
-        UIView *view = [self loadViewFromNib];
+        UIView *view = [self viewFromNib];
         CGRect viewBounds = view.bounds;
         
         // 2. Adjust the bounds
@@ -44,7 +44,7 @@
         // Frame is automatically set for us from our .xib file
         
         // 1. Load interface file from .xib
-        UIView *view = [self loadViewFromNib];
+        UIView *view = [self viewFromNib];
         
         // 2. Add as a subview
         [self addSubview:view];
