@@ -55,7 +55,22 @@
 #pragma mark - Method Swizzling
 - (void)vc_viewWillAppear:(BOOL)animated {
     [self vc_viewWillAppear:animated];
-    NSLog(@"viewWillAppear: %@", self);
+    
+    self.timesAppeared = [NSNumber numberWithFloat:[self.timesAppeared floatValue] + 1.0];
+    NSLog(@"viewWillAppear: %@; Appeared %@ times!", self, self.timesAppeared);
+}
+
+// Associated Objects
+- (NSNumber *)timesAppeared {
+    NSNumber *timesApppeared = objc_getAssociatedObject(self, @selector(timesAppeared));
+    if (!timesApppeared || [timesApppeared floatValue] < 0) {
+        self.timesAppeared = @0;
+    }
+    return objc_getAssociatedObject(self, @selector(timesAppeared));
+}
+
+- (void)setTimesAppeared:(NSNumber *)timesAppeared {
+    objc_setAssociatedObject(self, @selector(timesAppeared), timesAppeared, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 @end

@@ -18,4 +18,7 @@
 
 @interface UIViewController (ALVAdditions)
 
+// Associated Objects
+@property (nonatomic, copy) NSNumber *timesAppeared;
+
 @end
