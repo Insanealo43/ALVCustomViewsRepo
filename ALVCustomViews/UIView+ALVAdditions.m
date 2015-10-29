@@ -13,12 +13,11 @@ static NSString *const kNib = @"nib";
 
 @implementation UIView (ALVAdditions)
 
-- (UIView *)loadViewFromNib {
-    // Check to see if .xib file exists before loading
+- (UIView *)viewFromNib {
+    // Check to see if .xib file exists before loading it
     if ([[NSBundle mainBundle] pathForResource:[self className] ofType:kNib] != nil) {
-        // Load from bundle and return first view found
-        NSArray *views = [[NSBundle mainBundle] loadNibNamed:[self className] owner:self options:nil];
-        return [views firstObject];
+        // Load from bundle and return the first view found
+        return [[[NSBundle mainBundle] loadNibNamed:[self className] owner:self options:nil] firstObject];
     }
     
     return nil;

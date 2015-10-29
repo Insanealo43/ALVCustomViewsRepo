@@ -13,4 +13,7 @@
 + (NSString *)className;
 - (NSString *)className;
 
+// Associated Objects
+@property (nonatomic, copy) NSString *restorationIdentifier;
+
 @end
