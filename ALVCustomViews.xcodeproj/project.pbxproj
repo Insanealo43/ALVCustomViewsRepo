@@ -19,7 +19,18 @@
 		3AA94AFC1BE1A85200D62116 /* UIView+ALVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA94AFB1BE1A85200D62116 /* UIView+ALVAdditions.m */; };
 		3AA94AFF1BE1AF1700D62116 /* ALVView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA94AFE1BE1AF1700D62116 /* ALVView.m */; };
 		3AA94B021BE1C39400D62116 /* UIViewController+ALVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA94B011BE1C39400D62116 /* UIViewController+ALVAdditions.m */; };
+		3AA94B0A1BE1C9C300D62116 /* ALVCustomViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA94B091BE1C9C300D62116 /* ALVCustomViewsTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AA94B0C1BE1C9C300D62116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AA94AD01BE19FCE00D62116 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AA94AD71BE19FCE00D62116;
+			remoteInfo = ALVCustomViews;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3AA94AD81BE19FCE00D62116 /* ALVCustomViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALVCustomViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,10 +54,20 @@
 		3AA94AFE1BE1AF1700D62116 /* ALVView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALVView.m; sourceTree = "<group>"; };
 		3AA94B001BE1C39400D62116 /* UIViewController+ALVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ALVAdditions.h"; sourceTree = "<group>"; };
 		3AA94B011BE1C39400D62116 /* UIViewController+ALVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ALVAdditions.m"; sourceTree = "<group>"; };
+		3AA94B071BE1C9C300D62116 /* ALVCustomViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALVCustomViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA94B091BE1C9C300D62116 /* ALVCustomViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALVCustomViewsTests.m; sourceTree = "<group>"; };
+		3AA94B0B1BE1C9C300D62116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3AA94AD51BE19FCE00D62116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AA94B041BE1C9C300D62116 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				3AA94ADA1BE19FCE00D62116 /* ALVCustomViews */,
+				3AA94B081BE1C9C300D62116 /* ALVCustomViewsTests */,
 				3AA94AD91BE19FCE00D62116 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				3AA94AD81BE19FCE00D62116 /* ALVCustomViews.app */,
+				3AA94B071BE1C9C300D62116 /* ALVCustomViewsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +130,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3AA94B081BE1C9C300D62116 /* ALVCustomViewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AA94B091BE1C9C300D62116 /* ALVCustomViewsTests.m */,
+				3AA94B0B1BE1C9C300D62116 /* Info.plist */,
+			);
+			path = ALVCustomViewsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,6 +159,24 @@
 			productReference = 3AA94AD81BE19FCE00D62116 /* ALVCustomViews.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3AA94B061BE1C9C300D62116 /* ALVCustomViewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AA94B0E1BE1C9C300D62116 /* Build configuration list for PBXNativeTarget "ALVCustomViewsTests" */;
+			buildPhases = (
+				3AA94B031BE1C9C300D62116 /* Sources */,
+				3AA94B041BE1C9C300D62116 /* Frameworks */,
+				3AA94B051BE1C9C300D62116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AA94B0D1BE1C9C300D62116 /* PBXTargetDependency */,
+			);
+			name = ALVCustomViewsTests;
+			productName = ALVCustomViewsTests;
+			productReference = 3AA94B071BE1C9C300D62116 /* ALVCustomViewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -138,6 +188,10 @@
 				TargetAttributes = {
 					3AA94AD71BE19FCE00D62116 = {
 						CreatedOnToolsVersion = 7.1;
+					};
+					3AA94B061BE1C9C300D62116 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 3AA94AD71BE19FCE00D62116;
 					};
 				};
 			};
@@ -155,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				3AA94AD71BE19FCE00D62116 /* ALVCustomViews */,
+				3AA94B061BE1C9C300D62116 /* ALVCustomViewsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -168,6 +223,13 @@
 				3AA94AEB1BE19FCE00D62116 /* LaunchScreen.storyboard in Resources */,
 				3AA94AE81BE19FCE00D62116 /* Assets.xcassets in Resources */,
 				3AA94AE61BE19FCE00D62116 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AA94B051BE1C9C300D62116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +251,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3AA94B031BE1C9C300D62116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA94B0A1BE1C9C300D62116 /* ALVCustomViewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AA94B0D1BE1C9C300D62116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AA94AD71BE19FCE00D62116 /* ALVCustomViews */;
+			targetProxy = 3AA94B0C1BE1C9C300D62116 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3AA94AE41BE19FCE00D62116 /* Main.storyboard */ = {
@@ -315,6 +393,30 @@
 			};
 			name = Release;
 		};
+		3AA94B0F1BE1C9C300D62116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ALVCustomViewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndrewLopezVass.ALVCustomViewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ALVCustomViews.app/ALVCustomViews";
+			};
+			name = Debug;
+		};
+		3AA94B101BE1C9C300D62116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ALVCustomViewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndrewLopezVass.ALVCustomViewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ALVCustomViews.app/ALVCustomViews";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,6 +437,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		3AA94B0E1BE1C9C300D62116 /* Build configuration list for PBXNativeTarget "ALVCustomViewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA94B0F1BE1C9C300D62116 /* Debug */,
+				3AA94B101BE1C9C300D62116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
