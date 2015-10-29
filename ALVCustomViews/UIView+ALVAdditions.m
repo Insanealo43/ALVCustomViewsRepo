@@ -23,4 +23,36 @@ static NSString *const kNib = @"nib";
     return nil;
 }
 
+- (CGRect)frameWithX:(CGFloat)x {
+    return CGRectMake(x, self.frame.origin.y, self.frame.size.width, self.frame.size.height);
+}
+
+- (CGRect)frameWithY:(CGFloat)y {
+    return CGRectMake(self.frame.origin.x, y, self.frame.size.width, self.frame.size.height);
+}
+
+- (CGRect)frameWithWidth:(CGFloat)w {
+    return CGRectMake(self.frame.origin.x, self.frame.origin.y, w, self.frame.size.height);
+}
+
+- (CGRect)frameWithHeight:(CGFloat)h {
+    return CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, h);
+}
+
+- (CGSize)sizeWithWidht:(CGFloat)w {
+    return CGSizeMake(w, self.frame.size.height);
+}
+
+- (CGSize)sizeWithHeight:(CGFloat)h {
+    return CGSizeMake(self.frame.size.width, h);
+}
+
+- (CGPoint)pointWithX:(CGFloat)x {
+    return CGPointMake(x, self.frame.origin.y);
+}
+
+- (CGPoint)pointWithY:(CGFloat)y {
+    return CGPointMake(self.frame.origin.x, y);
+}
+
 @end
