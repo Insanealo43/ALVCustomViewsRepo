@@ -12,4 +12,15 @@
 
 - (UIView *)viewFromNib;
 
+- (CGRect)frameWithX:(CGFloat)x;
+- (CGRect)frameWithY:(CGFloat)y;
+- (CGRect)frameWithWidth:(CGFloat)w;
+- (CGRect)frameWithHeight:(CGFloat)h;
+
+- (CGSize)sizeWithWidht:(CGFloat)w;
+- (CGSize)sizeWithHeight:(CGFloat)h;
+
+- (CGPoint)pointWithX:(CGFloat)x;
+- (CGPoint)pointWithY:(CGFloat)y;
+
 @end
