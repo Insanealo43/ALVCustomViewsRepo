@@ -13,6 +13,11 @@
 		3AA94AE61BE19FCE00D62116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA94AE41BE19FCE00D62116 /* Main.storyboard */; };
 		3AA94AE81BE19FCE00D62116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA94AE71BE19FCE00D62116 /* Assets.xcassets */; };
 		3AA94AEB1BE19FCE00D62116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA94AE91BE19FCE00D62116 /* LaunchScreen.storyboard */; };
+		3AA94AF41BE1A13F00D62116 /* ALVCustomSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA94AF31BE1A13F00D62116 /* ALVCustomSliderView.m */; };
+		3AA94AF61BE1A15700D62116 /* ALVCustomSliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA94AF51BE1A15700D62116 /* ALVCustomSliderView.xib */; };
+		3AA94AF91BE1A52000D62116 /* NSObject+ALVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA94AF81BE1A52000D62116 /* NSObject+ALVAdditions.m */; };
+		3AA94AFC1BE1A85200D62116 /* UIView+ALVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA94AFB1BE1A85200D62116 /* UIView+ALVAdditions.m */; };
+		3AA94AFF1BE1AF1700D62116 /* ALVView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA94AFE1BE1AF1700D62116 /* ALVView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		3AA94AE71BE19FCE00D62116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AA94AEA1BE19FCE00D62116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AA94AEC1BE19FCE00D62116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AA94AF21BE1A13F00D62116 /* ALVCustomSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALVCustomSliderView.h; sourceTree = "<group>"; };
+		3AA94AF31BE1A13F00D62116 /* ALVCustomSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALVCustomSliderView.m; sourceTree = "<group>"; };
+		3AA94AF51BE1A15700D62116 /* ALVCustomSliderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALVCustomSliderView.xib; sourceTree = "<group>"; };
+		3AA94AF71BE1A52000D62116 /* NSObject+ALVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ALVAdditions.h"; sourceTree = "<group>"; };
+		3AA94AF81BE1A52000D62116 /* NSObject+ALVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ALVAdditions.m"; sourceTree = "<group>"; };
+		3AA94AFA1BE1A85200D62116 /* UIView+ALVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ALVAdditions.h"; sourceTree = "<group>"; };
+		3AA94AFB1BE1A85200D62116 /* UIView+ALVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ALVAdditions.m"; sourceTree = "<group>"; };
+		3AA94AFD1BE1AF1700D62116 /* ALVView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALVView.h; sourceTree = "<group>"; };
+		3AA94AFE1BE1AF1700D62116 /* ALVView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALVView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,15 @@
 				3AA94ADF1BE19FCE00D62116 /* AppDelegate.m */,
 				3AA94AE11BE19FCE00D62116 /* ViewController.h */,
 				3AA94AE21BE19FCE00D62116 /* ViewController.m */,
+				3AA94AF21BE1A13F00D62116 /* ALVCustomSliderView.h */,
+				3AA94AF31BE1A13F00D62116 /* ALVCustomSliderView.m */,
+				3AA94AF51BE1A15700D62116 /* ALVCustomSliderView.xib */,
+				3AA94AFD1BE1AF1700D62116 /* ALVView.h */,
+				3AA94AFE1BE1AF1700D62116 /* ALVView.m */,
+				3AA94AF71BE1A52000D62116 /* NSObject+ALVAdditions.h */,
+				3AA94AF81BE1A52000D62116 /* NSObject+ALVAdditions.m */,
+				3AA94AFA1BE1A85200D62116 /* UIView+ALVAdditions.h */,
+				3AA94AFB1BE1A85200D62116 /* UIView+ALVAdditions.m */,
 				3AA94AE41BE19FCE00D62116 /* Main.storyboard */,
 				3AA94AE71BE19FCE00D62116 /* Assets.xcassets */,
 				3AA94AE91BE19FCE00D62116 /* LaunchScreen.storyboard */,
@@ -136,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA94AF61BE1A15700D62116 /* ALVCustomSliderView.xib in Resources */,
 				3AA94AEB1BE19FCE00D62116 /* LaunchScreen.storyboard in Resources */,
 				3AA94AE81BE19FCE00D62116 /* Assets.xcassets in Resources */,
 				3AA94AE61BE19FCE00D62116 /* Main.storyboard in Resources */,
@@ -149,6 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA94AFF1BE1AF1700D62116 /* ALVView.m in Sources */,
+				3AA94AF91BE1A52000D62116 /* NSObject+ALVAdditions.m in Sources */,
+				3AA94AF41BE1A13F00D62116 /* ALVCustomSliderView.m in Sources */,
+				3AA94AFC1BE1A85200D62116 /* UIView+ALVAdditions.m in Sources */,
 				3AA94AE31BE19FCE00D62116 /* ViewController.m in Sources */,
 				3AA94AE01BE19FCE00D62116 /* AppDelegate.m in Sources */,
 				3AA94ADD1BE19FCE00D62116 /* main.m in Sources */,
